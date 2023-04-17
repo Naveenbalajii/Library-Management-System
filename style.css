@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url(photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner_1{
+    width: 100%;
+    height: 300vh;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url(photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner_2{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url(photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:35px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.navbar h1{
+    color:#009688;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 20px;
+    position: relative;
+    color:#009688;
+}
+
+.navbar_1{
+    width:85%;
+    margin:auto;
+    padding:35px;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    
+    
+    
+}
+.navbar_1 h2{
+    color:#009688;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar_1 ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 20px;
+    position: relative;
+    color:#009688;
+}
+.navbar_1 li:hover{
+    transform: scale(1.2);
+}
+a{
+    text-decoration: none;
+    color: #009688;
+}
+
+
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.centered-right {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+  
+button{
+    width:200px;
+    padding:15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid whitesmoke;
+    background: transparent;
+    color:antiquewhite;
+    cursor:pointer;
+    position: relative;
+    overflow:hidden;
+}
+
+span{
+    background: rgba(13, 141, 196, 0.662);
+    height: 100%;
+    width:0;
+    border-radius: 25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transform: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+
+
+
+.form-holder_1 {
+    height: 350px;
+    width: 400px;
+    background-color: rgba(7, 6, 9, 0.6);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(1px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.form-holder_1 * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form-holder_1 h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    color:antiquewhite;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color:antiquewhite;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color:antiquewhite;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+
+
+
+.form-holder{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(7, 6, 9, 0.6);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(1px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+.form-holder *{
+    font-family:sans-serif;
+    color: antiquewhite;
+    letter-spacing: 0.2px;
+    outline: none;
+    border: none;
+}
+
+.form-holder h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    color:antiquewhite;
+}
+
+th{
+    color:antiquewhite;
+}
+
+tbody{
+    color:antiquewhite;
+}
+
+
+.link{
+    text-decoration: none;
+    color:#009688;
+}
+
+.my-custom-scrollbar{
+    position: relative;
+    height: 420px;
+    overflow:auto;
+    text-decoration: none;
+}
+.table-wrapper-scroll-y{
+    display:block;
+}
+
+table{
+    align-items: center;
+    width: 60%;
+    
+}
+
+
+table.table-fit{
+    width:50px;
+}
+
+#divider{
+    margin-top:12em;
+}
+
+
+.addbook h2{
+    color:#009688;
+    margin-left: 45%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.addbook input{
+    display: block;
+    height: 50px;
+    width: 40%;
+    background-color: rgba(30, 25, 25, 0.5);
+    
+    padding: 0 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color:antiquewhite;
+    margin-left: 30%;
+}
+
+
+.addbook label{
+        display: block;
+        margin-top: 30px;
+        margin-left: 30%;
+        font-size: 20px;
+        font-weight: 500;
+        color:#009688;
+    
+}
+
+.addbook .submit{
+    color:#009688;
+    margin-left:40%;
+    overflow: hidden;
+    margin-top:auto;
+    position: relative;
+    border: none;
+}
+.addbook .submit:hover{
+    transform: scale(1.2);
+}
+
+
+.user h2{
+    color:#009688;
+    margin-left: 45%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.user li{
+    color:antiquewhite;
+    
+    margin-left: 45%;
+    margin-top: 2%;
+    font-size: 30px;
+    
+}
+
+#divider_1{
+    margin-top:5em;
+}
+
+
+#divider_2{
+    margin-top:15%;
+}
+
+.search{
+    width:50%;
+    margin-left: 25%;
+}
+
+
+.search h2{
+    color:#009688;
+    margin-left: 35%;
+    font-family: 'Courier New', Courier, monospace;
+    
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="stylesheet" href="style.css">
+
+
+<body>
+
+    <div class="banner">
+
+        <div class="form-holder_1">
+            <h3>Sign in Here</h3>
+                <label for="name">User Name</label>
+                <input type="text" id="username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password">
+
+
+
+                <button id="signin" onclick="signin()"><span></span>
+                    <h2>Sign in</h2>
+                </button>
+        
+        </div>
+    </div>
+
+
+    <script>
+        function signin(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "admin" && password == "ad1234") {
+                alert("Sign in successsfully...");
+                window.location.assign("admin_mainpage.html");
+            }
+            else {
+                alert("Data added Failed...");
+            }
+        };
+    </script>
+</body>
+
+</html>
